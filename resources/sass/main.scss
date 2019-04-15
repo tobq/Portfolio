@@ -1,1 +1,111 @@
 @import "fonts.css";
+
+$header-height: 80px;
+
+body {
+  margin: 0;
+  padding-top: $header-height;
+  font-family: roboto, Arial, serif;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $header-height;
+  background: linear-gradient(white, rgba(white, 0));
+  padding: 0 30px 50px;
+  pointer-events: none;
+
+  > * {
+    pointer-events: all;
+  }
+}
+
+#logo {
+  flex-grow: 1;
+  font-size: 30px;
+  user-select: none;
+  font-family: bebas, Arial, serif;
+}
+
+#info-buttons {
+  display: flex;
+
+  & > * {
+    display: inline-flex;
+
+    &:not(:last-child):after {
+      content: '';
+      margin: 0 16px;
+      height: 100%;
+      width: 2px;
+      background-color: black;
+    }
+  }
+}
+
+%icon {
+  $button-size: 24px;
+
+  //display: inline-block;
+  background-size: contain;
+  width: $button-size;
+  height: $button-size;
+}
+
+#github-link {
+  @extend %icon;
+  background-image: url(icon/github.svg);
+}
+
+#projects-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+%preceded-icon {
+  @extend %icon;
+  margin-left: 10px;
+}
+
+#projects-icon {
+  @extend %preceded-icon;
+  background-image: url(icon/down.svg);
+}
+
+#email-icon {
+  @extend %preceded-icon;
+  background-image: url(icon/email.svg);
+}
+
+#email-link {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#content {
+  font-size: 70px;
+}
+
+#home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#home-text {
+  text-align: center;
+  font-size: 30px;
+  flex-grow: 1;
+}

@@ -37,3 +37,8 @@
     font-family: rcondensed;
     src: url(/font/roboto-condensed.ttf);
 }
+
+@font-face {
+    font-family: bebas;
+    src: url(font/bebas.otf);
+}

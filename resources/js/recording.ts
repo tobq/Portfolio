@@ -1,1 +1,61 @@
-export default [[1139, ""], [1403, ""], [1643, "Y"], [1731, "Yo"], [1755, "You"], [1883, "Youn"], [2027, "Young"], [2635, "Young "], [2811, "Young l"], [2867, "Young lo"], [3011, "Young lon"], [3147, "Young lond"], [3203, "Young londo"], [3915, "Young london"], [4139, "Young london "], [4275, "Young london b"], [4515, "Young london ba"], [4667, "Young london b"], [4827, "Young london "], [4875, "Young london"], [5107, "Young london-"], [5179, "Young london-b"], [5235, "Young london-ba"], [5379, "Young london-bas"], [5539, "Young london-base"], [5579, "Young london-based"], [5723, "Young london-based "], [5811, "Young london-based f"], [5987, "Young london-based fu"], [6091, "Young london-based ful"], [6219, "Young london-based full"], [6707, "Young london-based fulls"], [6771, "Young london-based full"], [6883, "Young london-based full-"], [6947, "Young london-based full-s"], [7091, "Young london-based full-st"], [7203, "Young london-based full-sta"], [7323, "Young london-based full-stac"], [7435, "Young london-based full-stack"], [7603, "Young london-based full-stack "], [7691, "Young london-based full-stack d"], [7835, "Young london-based full-stack de"], [7899, "Young london-based full-stack dev"], [7955, "Young london-based full-stack deve"], [8123, "Young london-based full-stack devel"], [8171, "Young london-based full-stack develo"], [8235, "Young london-based full-stack develop"], [8259, "Young london-based full-stack develope"], [9179, "Young london-based full-stack developer"]]
+export default [{"offset": 569.5, "text": ""}, {"offset": 701.5, "text": ""}, {
+    "offset": 821.5,
+    "text": "Y"
+}, {"offset": 865.5, "text": "Yo"}, {"offset": 877.5, "text": "You"}, {
+    "offset": 941.5,
+    "text": "Youn"
+}, {"offset": 1013.5, "text": "Young"}, {"offset": 1317.5, "text": "Young "}, {
+    "offset": 1405.5,
+    "text": "Young l"
+}, {"offset": 1433.5, "text": "Young lo"}, {"offset": 1505.5, "text": "Young lon"}, {
+    "offset": 1573.5,
+    "text": "Young lond"
+}, {"offset": 1601.5, "text": "Young londo"}, {"offset": 1957.5, "text": "Young london"}, {
+    "offset": 2069.5,
+    "text": "Young london "
+}, {"offset": 2137.5, "text": "Young london b"}, {"offset": 2257.5, "text": "Young london ba"}, {
+    "offset": 2333.5,
+    "text": "Young london b"
+}, {"offset": 2413.5, "text": "Young london "}, {"offset": 2437.5, "text": "Young london"}, {
+    "offset": 2553.5,
+    "text": "Young london-"
+}, {"offset": 2589.5, "text": "Young london-b"}, {"offset": 2617.5, "text": "Young london-ba"}, {
+    "offset": 2689.5,
+    "text": "Young london-bas"
+}, {"offset": 2769.5, "text": "Young london-base"}, {"offset": 2789.5, "text": "Young london-based"}, {
+    "offset": 2861.5,
+    "text": "Young london-based "
+}, {"offset": 2905.5, "text": "Young london-based f"}, {
+    "offset": 2993.5,
+    "text": "Young london-based fu"
+}, {"offset": 3045.5, "text": "Young london-based ful"}, {
+    "offset": 3109.5,
+    "text": "Young london-based full"
+}, {"offset": 3353.5, "text": "Young london-based fulls"}, {
+    "offset": 3385.5,
+    "text": "Young london-based full"
+}, {"offset": 3441.5, "text": "Young london-based full-"}, {
+    "offset": 3473.5,
+    "text": "Young london-based full-s"
+}, {"offset": 3545.5, "text": "Young london-based full-st"}, {
+    "offset": 3601.5,
+    "text": "Young london-based full-sta"
+}, {"offset": 3661.5, "text": "Young london-based full-stac"}, {
+    "offset": 3717.5,
+    "text": "Young london-based full-stack"
+}, {"offset": 3801.5, "text": "Young london-based full-stack "}, {
+    "offset": 3845.5,
+    "text": "Young london-based full-stack d"
+}, {"offset": 3917.5, "text": "Young london-based full-stack de"}, {
+    "offset": 3949.5,
+    "text": "Young london-based full-stack dev"
+}, {"offset": 3977.5, "text": "Young london-based full-stack deve"}, {
+    "offset": 4061.5,
+    "text": "Young london-based full-stack devel"
+}, {"offset": 4085.5, "text": "Young london-based full-stack develo"}, {
+    "offset": 4117.5,
+    "text": "Young london-based full-stack develop"
+}, {"offset": 4129.5, "text": "Young london-based full-stack develope"}, {
+    "offset": 4589.5,
+    "text": "Young london-based full-stack developer"
+}, {"offset": 5089.5, "text": "Young london-based full-stack developer."}]

@@ -12,7 +12,7 @@ export interface VideoCardProps {
 export default (props: VideoCardProps) => <div className="card">
     <a href={props.url} className="card-title" target="_blank">{props.name}</a>
     <div className="card-video-con">
-        <video src={props.src} autoPlay className="card-video"/>
+        <video src={props.src} autoPlay loop muted className="card-video"/>
     </div>
     <div className="card-content">
         <div className="card-date">{props.date}</div>

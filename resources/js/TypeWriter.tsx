@@ -15,16 +15,12 @@ export default class extends React.Component<Props, State> {
 
     constructor(props: Props) {
         super(props);
-        console.log(props);
         this.run();
     }
 
     async run() {
-        console.log(this.state.running, this.state);
         if (this.state.running) return;
-        console.log(2);
-            this.setState({running: true}, ()=>console.log(4));
-        console.log(3);
+        this.setState({running: true}, () => console.log(4));
         const recording = this.props.recording;
 
         for (let i = 0; i < recording.length; i++) {
@@ -40,6 +36,7 @@ export default class extends React.Component<Props, State> {
     render() {
         return this.props.recording[this.state.index].text;
     }
+
     private getOffset(i: number) {
         return this.props.recording[i].offset;
     }

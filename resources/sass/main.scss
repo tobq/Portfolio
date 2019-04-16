@@ -1,13 +1,18 @@
 @import "fonts.css";
 
 $header-height: 80px;
+$side-spacing: 30px;
+html {
+  background: linear-gradient(-30deg, #fff9ea, white) no-repeat fixed;
+}
 
 body {
   margin: 0;
-  padding-top: $header-height;
+  padding: $header-height $side-spacing 0;
   font-family: roboto, Arial, serif;
   height: 100vh;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -19,7 +24,7 @@ header {
   left: 0;
   height: $header-height;
   background: linear-gradient(white, rgba(white, 0));
-  padding: 0 30px 50px;
+  padding: 0 $side-spacing 50px;
   pointer-events: none;
 
   > * {
@@ -67,10 +72,12 @@ header {
 #projects-button {
   display: flex;
   align-items: center;
-  padding: 10px 16px;
+  padding: 0;
   background: none;
   outline: none;
   border: none;
+  font-size: 20px;
+  margin-bottom: 60px;
 }
 
 %preceded-icon {
@@ -104,8 +111,41 @@ header {
   flex-direction: column;
 }
 
-#home-text {
+#home-summary {
   text-align: center;
   font-size: 30px;
   flex-grow: 1;
+}
+
+#skills-title {
+  font-size: 30px;
+}
+
+#home-skills {
+  padding: 10px 0;
+  //height: 100px;
+  //width: 300px
+  overflow-y: auto;
+}
+
+.skill {
+  transition: box-shadow 0.3s ease, opacity 0.3s ease;
+  padding: 0 20px;
+  margin: 10px;
+  $skill-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: $skill-height/2;
+  background: white;
+  height: $skill-height;
+  box-shadow: 0 0 10px rgba(black, 0.05);
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 20px rgba(black, 0.1);
+  }
 }

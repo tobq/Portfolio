@@ -2,9 +2,6 @@
 
 $header-height: 80px;
 $side-spacing: 30px;
-html {
-  background: linear-gradient(-30deg, #fff9ea, white) no-repeat fixed;
-}
 
 body {
   margin: 0;
@@ -23,8 +20,8 @@ header {
   right: 0;
   left: 0;
   height: $header-height;
-  background: linear-gradient(white, rgba(white, 0));
-  padding: 0 $side-spacing 50px;
+  background: linear-gradient(to bottom, white, transparent);
+  padding: 0 $side-spacing 20px;
   pointer-events: none;
 
   > * {
@@ -66,7 +63,7 @@ header {
 
 #github-link {
   @extend %icon;
-  background-image: url(icon/github.svg);
+  background-image: url(image/github.svg);
 }
 
 #projects-button {
@@ -87,12 +84,12 @@ header {
 
 #projects-icon {
   @extend %preceded-icon;
-  background-image: url(icon/down.svg);
+  background-image: url(image/down.svg);
 }
 
 #email-icon {
   @extend %preceded-icon;
-  background-image: url(icon/email.svg);
+  background-image: url(image/email.svg);
 }
 
 #email-link {
@@ -102,7 +99,11 @@ header {
 }
 
 #content {
-  font-size: 70px;
+  padding: 30px 0;
+  flex-wrap: wrap;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
 }
 
 #home {

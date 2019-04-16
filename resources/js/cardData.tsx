@@ -29,7 +29,7 @@ const cardData: (VideoCardProps | ImageCardProps)[] = [
         date: "Aug 2016",
         description: <div>
             Another masterful shot... Captured in High-Distortion by the Pool-Cam system I worked on.<br/>
-            <span id="note">This was later rectified, using automatic image manipulation.</span>
+            <span id="note">This was later rectified, using automatic image manipulation, based on the rectangular bounds of the pool table.</span>
         </div>,
         src: "video/pool.mp4",
     },
@@ -37,7 +37,7 @@ const cardData: (VideoCardProps | ImageCardProps)[] = [
         url: "http://chalky.tobi.me.uk",
         name: "Chalky",
         date: "2015",
-        description:"This 'Chalk-board' allows random users to leave messages anonymously, or with a name. The user also has the ability to create a drawing which will be re-animated on another users end using canvasing. The project uses a multitude of frameworks ranging from the PHP and MySQL database in the back-end the to Ajax data handling, HTML5 canvases and JavaScript running the front-end.",
+        description: "This 'Chalk-board' allows random users to leave messages anonymously, or with a name. The user also has the ability to create a drawing which will be re-animated on another users end using canvasing. The project uses a multitude of frameworks ranging from the PHP and MySQL database in the back-end the to Ajax data handling, HTML5 canvases and JavaScript running the front-end.",
         backgroundImage: "url(image/chalky.png)",
     },
 ];

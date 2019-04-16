@@ -4,12 +4,19 @@ import {VideoCardProps} from "./VideoCard";
 
 const cardData: (VideoCardProps | ImageCardProps)[] = [
     {
+        url: null,
+        name: "Energy Vision",
+        date: "2018",
+        description: "I'm the lead developer on the Energy Vision product distributed by Forest Rock Ltd. It's a engineering / GUI tool use for Building Management Systems (BMS) to help evaluate resource usage across buildings. Technologies used vary through: Java, Gradle, GIT, JavaScript, ReactJS, Typescript and Tridium's Niagara Framework",
+        backgroundImage: "url(image/ev.jpg)",
+    },
+    {
         url: "https://rawgit.com/tobq/mut8/master/index.html",
         name: "mut8",
         date: "Oct 2016",
         description: <div>
-            This is a sandbox, based around the physics engine Box2D, in which creatures evolve to run as fast as
-            possible - by defualt.<br/>
+            This is an implementation of a genetic algorithm, in which creatures evolve to run as fast as
+            possible. I made use of the Box2D front end physics engine for the physics simulation<br/>
             <span id="note">
 					The project can be viewed on  <a style={{color: "#7777AA"}} href="http://github.com/tobq/mut8">github here</a>
 				</span>

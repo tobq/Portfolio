@@ -31,7 +31,7 @@ const cardData: (VideoCardProps | ImageCardProps)[] = [
         backgroundImage: "url(image/wach.png)",
     },
     {
-        url: "http://woch.herokuapp.com",
+        url: "null",
         name: "Pool-cam",
         date: "Aug 2016",
         description: <div>

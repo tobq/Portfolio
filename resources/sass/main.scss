@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "variables";
 
 $header-height: 80px;
 $side-spacing: 30px;
@@ -104,6 +105,7 @@ header {
   height: 100%;
   box-sizing: border-box;
   display: flex;
+  margin: 0 -#{$card-spacing} -#{$card-spacing} 0;
 }
 
 #home {
@@ -122,18 +124,21 @@ header {
   font-size: 30px;
 }
 
+$skill-spacing: 10px;
+
 #home-skills {
   padding: 10px 0;
   //height: 100px;
   //width: 300px
   overflow-y: auto;
+  margin: 0 -#{$skill-spacing} -#{$skill-spacing} 0;
 }
 
 .skill {
+  $skill-height: 40px;
   transition: box-shadow 0.3s ease, opacity 0.3s ease;
   padding: 0 20px;
-  margin: 10px;
-  $skill-height: 40px;
+  margin: 0 $skill-spacing $skill-spacing 0;
   display: inline-flex;
   align-items: center;
   border-radius: $skill-height/2;

@@ -1,11 +1,13 @@
+@import "variables";
+
 .card {
   display: flex;
   flex-direction: column;
   width: 300px;
   flex-grow: 1;
-  margin: 20px;
+  margin: 0 $card-spacing $card-spacing 0;
 
-  box-shadow: 0 5px 30px rgba(black, 0.1);
+  box-shadow: 0 5px 15px rgba(black, 0.1);
   height: 500px;
   max-height: 100%;
   background: white;

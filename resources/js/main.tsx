@@ -36,6 +36,6 @@ ReactDOM.render(cardData.map(cardProps => {
 // TODO: ADD MORE PROJECTS
 // TODO: ADD COMPANY LOGOS 
 // TODO: fractal background
-   Use preact
+// todo: Use preact
 // TODO: MOVE CARDDATA/SKILLS TO A DATA PACKAGE
 // TODO: MODULARISE IMAGE/VIDEO CARD COMPONENTS TO BE POLYMORPHIC

@@ -1,6 +1,7 @@
 const path = require("path");
 
 const config = {
+    mode: "production",
     entry: "./resources/js/main.tsx",
     output: {
         path: path.resolve(__dirname, "public/js"),

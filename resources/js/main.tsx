@@ -10,7 +10,7 @@ import VideoCard from "./VideoCard";
 
 const summary = document.getElementById("home-summary");
 const skills = document.getElementById("home-skills");
-const content = document.getElementById("content");
+const projects = document.getElementById("projects");
 
 const ref = React.createRef<TypeWriter>();
 ReactDOM.render(<TypeWriter recording={recording} ref={ref}/>, summary);
@@ -28,7 +28,7 @@ ReactDOM.render(cardData.map(cardProps => {
     return "backgroundImage" in cardProps ?
         <ImageCard {...cardProps}/> :
         <VideoCard {...cardProps}/>
-}), content);
+}), projects);
 
 
 // TODO: IMAGE URL ICON

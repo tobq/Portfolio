@@ -13,8 +13,7 @@ export default class extends React.Component<Props, State> {
         index: 0
     };
 
-    constructor(props: Props) {
-        super(props);
+    componentDidMount(): void {
         this.run();
     }
 

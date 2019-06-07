@@ -114,7 +114,7 @@ body > section {
   //box-sizing: border-box;
   height: 100%;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: $side-spacing;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 

@@ -27,5 +27,6 @@ export default [
     "Babel",
     "AJAX",
     "Apache",
-    "BASH"
+    "BASH",
+    "..."
 ]

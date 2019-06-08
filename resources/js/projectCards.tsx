@@ -1,6 +1,4 @@
-import {ImageCardProps} from "./ImageCard";
 import * as React from "react";
-import {VideoCardProps} from "./VideoCard";
 
 export default [
     {
@@ -10,21 +8,33 @@ export default [
         description: <div>
             Voice books is a mobile application I developed that automatically transcribes "voice books".<br/>
             Upon playback, the words are synchronised with the audio - at a user-defined playback speed.<br/>
-            This project makes use of Google's Speech-To-Text API. There's an additional node.js server backing this project;
+            This project makes use of Google's Speech-To-Text API. There's an additional node.js server backing this
+            project;
             doing things such as mediating transcription.
         </div>,
         src: "video/voicebooks.mp4",
-        contain:true,
+        contain: true,
     },
     {
         url: "http://unicheap.herokuapp.com",
         name: "Uni.cheap",
-        date: "Jan 2017",
+        date: "Jan 2018",
         description: <div>
             An ecommerce website I built from scratch. This project is backed by a node.js server.
             <br/> As of 2019, I've disabled this websites checkout.
         </div>,
         backgroundImage: "url(image/unicheap.png)",
+    },
+    {
+        url: "https://1drv.ms/w/s!AnLTraYGkdweknVDPTqbAKcc2oGE",
+        name: "Should the development and deployment of lethal autonomous weapon systems be banned?",
+        date: "May 2017",
+        description: <div>A discussion about lethal robotics<br/><br/>
+            In this dissertation, I investigate the topic of lethal autonomous weapon systems, exploring topics ranging
+            through their effects on civilization, the ethicality of their use, the subsequence of their use and legal
+            complications regarding the technology, in an attempt to conclude whether they should be used, or banned
+        </div>,
+        backgroundImage: "url(image/LAWS.png)",
     },
     {
         url: "https://rawgit.com/tobq/mut8/master/index.html",

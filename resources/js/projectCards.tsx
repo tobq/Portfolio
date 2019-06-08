@@ -2,25 +2,19 @@ import {ImageCardProps} from "./ImageCard";
 import * as React from "react";
 import {VideoCardProps} from "./VideoCard";
 
-const cardData: (VideoCardProps | ImageCardProps)[] = [
+export default [
     {
-        url: "voicebooks/",
+        url: "voicebooks/index.html",
         name: "Voice Books",
         date: "Mar 2019",
         description: <div>
-           Voice books is a mobile application I developed that automatically transcribes "voice books".<br/>
-           Upon playback, the words are synchronised with the audio - at a user-defined playback speed.<br/>
-           This project makes use of Google's Speech-To-Text API. There's an additional node.js server backing this project;
+            Voice books is a mobile application I developed that automatically transcribes "voice books".<br/>
+            Upon playback, the words are synchronised with the audio - at a user-defined playback speed.<br/>
+            This project makes use of Google's Speech-To-Text API. There's an additional node.js server backing this project;
             doing things such as mediating transcription.
         </div>,
         src: "video/voicebooks.mp4",
-    },
-    {
-        url: "https://www.forestrock.co.uk/ev/",
-        name: "Energy Vision",
-        date: "Mar 2018",
-        description: "I'm the lead developer on the Energy Vision product distributed by Forest Rock Ltd. It's a engineering / GUI tool use for Building Management Systems (BMS) to help evaluate resource usage across buildings. Technologies used vary through: Java, Gradle, GIT, JavaScript, ReactJS, Typescript and Tridium's Niagara Framework",
-        backgroundImage: "url(image/ev.jpg)",
+        contain:true,
     },
     {
         url: "http://unicheap.herokuapp.com",
@@ -53,23 +47,6 @@ const cardData: (VideoCardProps | ImageCardProps)[] = [
         backgroundImage: "url(image/wach.png)",
     },
     {
-        url: null,
-        name: "Pool-cam",
-        date: "Aug 2016",
-        description: <div>
-            Another masterful shot... Captured in High-Distortion by the Pool-Cam system I worked on.<br/>
-            <span id="note">This was later rectified, using automatic image manipulation, based on the rectangular bounds of the pool table.</span>
-        </div>,
-        src: "video/pool.mp4",
-    },
-    {
-        url: "https://www.instagram.com/thatsuccessshow",
-        name: "That Success Show",
-        date: "May 2016",
-        description: `I worked with PremierModa to create the website for their web-series: "That Success Show" - a show about luxury and success.`,
-        backgroundImage: "url(image/TSS.png)"
-    },
-    {
         url: "http://chalky.tobi.me.uk",
         name: "Chalky",
         date: "2015",
@@ -77,4 +54,3 @@ const cardData: (VideoCardProps | ImageCardProps)[] = [
         backgroundImage: "url(image/chalky.png)",
     },
 ];
-export default cardData;

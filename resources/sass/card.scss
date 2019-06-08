@@ -32,6 +32,7 @@
 .card-content {
   padding: 30px;
   overflow-y: auto;
+  flex-shrink: 0;
 }
 
 .card-date {
@@ -43,11 +44,16 @@
 .card-video-con {
   flex-grow: 1;
   overflow: hidden;
+  background: black;
 }
 
-.card-video {
+.card-video, .card-video-contain {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.card-video-contain {
+  object-fit: contain;
 }

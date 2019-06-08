@@ -4,13 +4,15 @@ import * as ReactDOM from "react-dom";
 import * as React from "react";
 import TypeWriter from "./TypeWriter";
 import SKILLS from "./Skills";
-import cardData from "./cardData";
+import workCards, {CardProps} from "./workCards";
 import ImageCard from "./ImageCard";
 import VideoCard from "./VideoCard";
+import projectCards from "./projectCards";
 
 const summary = document.getElementById("home-summary");
 const skills = document.getElementById("home-skills");
-const projects = document.getElementById("projects");
+const experience = document.getElementById("experience-cards");
+const projects = document.getElementById("project-cards");
 
 const ref = React.createRef<TypeWriter>();
 ReactDOM.render(<TypeWriter recording={recording} ref={ref}/>, summary);
@@ -24,12 +26,18 @@ ReactDOM.render(SKILLS.map((skill, i) => {
     return div
 }), skills);
 
-ReactDOM.render(cardData.map(cardProps => {
-    return "backgroundImage" in cardProps ?
-        <ImageCard {...cardProps}/> :
-        <VideoCard {...cardProps}/>
-}), projects);
+ReactDOM.render(renderCards(workCards), experience);
+ReactDOM.render(renderCards(projectCards), projects);
 
+
+
+function renderCards(cardProps: CardProps[]) {
+    return cardProps.map(cardProp =>
+        "backgroundImage" in cardProp ?
+            <ImageCard {...cardProp}/> :
+            <VideoCard {...cardProp}/>
+    );
+}
 
 // TODO: IMAGE URL ICON
 // TODO: PROJECTS LINK SCROLL DOWN

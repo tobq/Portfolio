@@ -11,6 +11,16 @@ const cardData: (VideoCardProps | ImageCardProps)[] = [
         backgroundImage: "url(image/ev.jpg)",
     },
     {
+        url: "http://unicheap.herokuapp.com",
+        name: "Uni.cheap",
+        date: "Jan 2017",
+        description: <div>
+            An ecommerce website I built from scratch. This project is backed by a node.js server.
+            <br/> As of 2019, I've disabled this websites checkout.
+        </div>,
+        backgroundImage: "url(image/unicheap.png)",
+    },
+    {
         url: "https://rawgit.com/tobq/mut8/master/index.html",
         name: "mut8",
         date: "Oct 2016",

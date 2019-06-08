@@ -4,6 +4,18 @@ import {VideoCardProps} from "./VideoCard";
 
 const cardData: (VideoCardProps | ImageCardProps)[] = [
     {
+        url: "voicebooks/",
+        name: "Voice Books",
+        date: "Mar 2019",
+        description: <div>
+           Voice books is a mobile application I developed that automatically transcribes "voice books".<br/>
+           Upon playback, the words are synchronised with the audio - at a user-defined playback speed.<br/>
+           This project makes use of Google's Speech-To-Text API. There's an additional node.js server backing this project;
+            doing things such as mediating transcription.
+        </div>,
+        src: "video/voicebooks.mp4",
+    },
+    {
         url: "https://www.forestrock.co.uk/ev/",
         name: "Energy Vision",
         date: "Mar 2018",

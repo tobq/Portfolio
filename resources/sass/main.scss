@@ -5,9 +5,8 @@ $side-spacing: 30px;
 
 body {
   margin: 0;
-  padding: 0 $side-spacing;
+  padding: 0 $side-spacing $side-spacing;
   font-family: roboto, Arial, serif;
-  height: 100vh;
   overflow-y: auto;
   box-sizing: border-box;
 
@@ -117,7 +116,7 @@ header {
 }
 
 #home {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

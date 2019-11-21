@@ -19,13 +19,11 @@
 .card-title {
   transition: background-color 200ms ease;
   position: relative;
-  z-index: 1;
   padding: 20px;
   color: black;
-  box-shadow: 0 5px 30px rgba(black, 0.1);
 
   &:hover {
-    background-color: rgba(black, 0.04);
+    background-color: #EEE;
   }
 }
 
@@ -33,6 +31,11 @@
   padding: 30px;
   overflow-y: auto;
   flex-shrink: 0;
+}
+
+.card-content, .card-title {
+  box-shadow: 0 0 30px rgba(black, 0.1);
+  z-index: 1;
 }
 
 .card-date {

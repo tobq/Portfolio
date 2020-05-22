@@ -4,7 +4,7 @@ export default [
     "ReactJS",
     "NodeJS",
     "Java",
-    "Kotlin",
+    // "Kotlin",
     "Android Development",
     "GIT",
     "MySQL / PostgreSQL",

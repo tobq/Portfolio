@@ -13,7 +13,13 @@
 .card-image {
   flex-grow: 1;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+}
+
+.card-link {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
 }
 
 .card-title {
@@ -34,7 +40,7 @@
 }
 
 .card-content, .card-title {
-  box-shadow: 0 0 30px rgba(black, 0.1);
+  box-shadow: 0 0 30px rgba(black, 0.3);
   z-index: 1;
 }
 

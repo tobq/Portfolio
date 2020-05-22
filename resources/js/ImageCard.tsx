@@ -10,9 +10,10 @@ export interface ImageCardProps {
 }
 
 export default (props: ImageCardProps) => <div className="card">
-    <a href={props.url} className="card-title" target="_blank">{props.name}</a>
-    <div className="card-image" style={{backgroundImage: props.backgroundImage}}>
-    </div>
+    <a className="card-link" href={props.url} target="_blank">
+    <div className="card-title">{props.name}</div>
+    <div className="card-image" style={{backgroundImage: `url(${props.backgroundImage})`}}/>
+    </a>
     <div className="card-content">
         <div className="card-date">{props.date}</div>
         <div className="card-description"> {props.description}</div>

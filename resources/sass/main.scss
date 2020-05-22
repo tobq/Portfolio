@@ -1,12 +1,10 @@
-@import "fonts.css";
-
 $header-height: 80px;
 $side-spacing: 30px;
 
 body {
   margin: 0;
   padding: 0 $side-spacing $side-spacing;
-  font-family: roboto, Arial, serif;
+  font-family: Roboto, Arial, serif;
   overflow-y: auto;
   box-sizing: border-box;
 
@@ -37,22 +35,32 @@ header {
   }
 }
 
-#logo {
-  flex-grow: 1;
-  font-size: 30px;
-  user-select: none;
+
+%logo-text {
+  font-size: 40px;
   font-family: bebas, Arial, serif;
 }
 
-#info-buttons {
+#logo {
+  @extend %logo-text;
+  flex-grow: 1;
+  user-select: none;
+}
+
+#info-links {
   display: flex;
+  font-size: 19px;
 
   & > * {
+    text-decoration: none;
     display: inline-flex;
+    align-items: center;
+    padding: 0 8px;
+    color: black;
 
     &:not(:last-child):after {
       content: '';
-      margin: 0 16px;
+      margin-left: 16px;
       height: 100%;
       width: 2px;
       background-color: black;
@@ -64,7 +72,10 @@ header {
   $button-size: 24px;
 
   //display: inline-block;
+  background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
   width: $button-size;
   height: $button-size;
 }
@@ -99,20 +110,14 @@ header {
   background-image: url(image/email.svg);
 }
 
-#email-link {
-  display: flex;
-  align-items: center;
-  color: black;
-}
-
-#project-cards, #experience-cards  {
+#project-cards, #experience-cards {
   //padding: 30px 0;
   //flex-wrap: wrap;
   //box-sizing: border-box;
   //height: 100%;
   display: grid;
   grid-gap: $side-spacing;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 #home {

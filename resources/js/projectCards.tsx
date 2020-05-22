@@ -2,6 +2,17 @@ import * as React from "react";
 
 export default [
     {
+        url: "https://tobi.productions",
+        name: "Tobi Productions",
+        date: "Jan 2020",
+        description: <div>
+            As an avid fan of various genres of music, I started music production as a hobby.
+            I've developed a music portfolio - using a content management system - at <a
+            href="https://tobi.productions">tobi.productions</a>
+        </div>,
+        backgroundImage: "image/tobi.productions.png",
+    },
+    {
         url: "voicebooks/index.html",
         name: "Voice Books",
         date: "Mar 2019",
@@ -12,7 +23,7 @@ export default [
             project;
             doing things such as mediating transcription.
         </div>,
-        src: "video/voicebooks.mp4",
+        backgroundVideo: "video/voicebooks.mp4",
         contain: true,
     },
     {
@@ -23,18 +34,18 @@ export default [
             An ecommerce website I built from scratch. This project is backed by a node.js server.
             <br/> As of 2019, I've disabled this websites checkout.
         </div>,
-        backgroundImage: "url(image/unicheap.png)",
+        backgroundImage: "image/unicheap.png",
     },
     {
         url: "https://1drv.ms/w/s!AnLTraYGkdweknVDPTqbAKcc2oGE",
-        name: "Should the development and deployment of lethal autonomous weapon systems be banned?",
+        name: "Should Lethal Autonomous Weapon Systems be banned?",
         date: "May 2017",
         description: <div>A discussion about lethal robotics<br/><br/>
             In this dissertation, I investigate the topic of lethal autonomous weapon systems, exploring topics ranging
             through their effects on civilization, the ethicality of their use, the subsequence of their use and legal
             complications regarding the technology, in an attempt to conclude whether they should be used, or banned
         </div>,
-        backgroundImage: "url(image/LAWS.png)",
+        backgroundImage: "image/LAWS.png",
     },
     {
         url: "https://rawgit.com/tobq/mut8/master/index.html",
@@ -47,20 +58,20 @@ export default [
 					The project can be viewed on  <a style={{color: "#7777AA"}} href="http://github.com/tobq/mut8">github here</a>
 				</span>
         </div>,
-        backgroundImage: "url(image/mut8.png)",
+        backgroundImage: "image/mut8.png",
     },
     {
         url: "http://woch.herokuapp.com",
         name: "wach",
         date: "Sep 2016",
         description: "In this game, you play a flash-light-like object that can only see within their lit viewport. Players lose by being killed by another's beam of light, and gain points by beaming down others. Players also have a variety of auto-regenerating power-ups, which are triggered (and diminished) while their mouse is held down. The game was written in Javascript - both front and back end - and also utilises web sockets for connections between the server and players.",
-        backgroundImage: "url(image/wach.png)",
+        backgroundImage: "image/wach.png",
     },
     {
         url: "http://chalky.tobi.me.uk",
         name: "Chalky",
         date: "2015",
         description: "This 'Chalk-board' allows random users to leave messages anonymously, or with a name. The user also has the ability to create a drawing which will be re-animated on another users end using canvasing. The project uses a multitude of frameworks ranging from the PHP and MySQL database in the back-end the to Ajax data handling, HTML5 canvases and JavaScript running the front-end.",
-        backgroundImage: "url(image/chalky.png)",
+        backgroundImage: "image/chalky.png",
     },
 ];

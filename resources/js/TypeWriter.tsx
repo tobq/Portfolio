@@ -19,7 +19,7 @@ export default class extends React.Component<Props, State> {
 
     async run() {
         if (this.state.running) return;
-        this.setState({running: true}, () => console.log(4));
+        this.setState({running: true});
         const recording = this.props.recording;
 
         for (let i = 0; i < recording.length; i++) {

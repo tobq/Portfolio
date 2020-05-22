@@ -6,14 +6,14 @@ export interface VideoCardProps {
     name: string,
     date: string,
     description: React.ReactNode | React.ReactNodeArray,
-    src: string,
+    backgroundVideo: string,
     contain?: boolean
 }
 
 export default (props: VideoCardProps) => <div className="card">
     <a href={props.url} className="card-title" target="_blank">{props.name}</a>
     <div className="card-video-con">
-        <video src={props.src} autoPlay loop muted className={props.contain ? "card-video-contain" : "card-video"}/>
+        <video src={props.backgroundVideo} autoPlay loop muted className={props.contain ? "card-video-contain" : "card-video"}/>
     </div>
     <div className="card-content">
         <div className="card-date">{props.date}</div>

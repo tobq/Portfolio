@@ -120,6 +120,11 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
+#view-all-projects {
+  color: black;
+  margin-left: 20px;
+}
+
 #home {
   height: 100vh;
   display: flex;
@@ -138,11 +143,16 @@ header {
 }
 
 .title {
-  font-size: 22px;
   margin: 16px 0;
-  font-family: KC;
+  display: flex;
+  align-items: center;
 }
 
+.title-text {
+  display: inline-block;
+  font-size: 22px;
+  font-family: KC;
+}
 
 #home-skills {
   $sides: 10px;

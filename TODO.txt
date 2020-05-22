@@ -1,3 +1,4 @@
 increase logo a bit
 add link to music
 add "view all" link to github in projects section
+flash before react laods - loading screen

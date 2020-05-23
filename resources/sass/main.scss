@@ -59,10 +59,10 @@ header {
 
     &:not(:last-child):after {
       content: '';
-      margin-left: 16px;
+      margin-left: 14px;
       height: 100%;
       width: 2px;
-      background-color: black;
+      background-color: #CCC;
     }
   }
 }
@@ -94,20 +94,29 @@ header {
   font-size: 20px;
 }
 
-%preceded-icon {
+#projects-icon {
   @extend %icon;
   margin-left: 10px;
-}
-
-#projects-icon {
-  @extend %preceded-icon;
   background-image: url(image/down.svg);
 }
 
 #email-icon {
-  @extend %preceded-icon;
+  @extend %icon;
   background-image: url(image/email.svg);
 }
+
+
+
+#music-icon {
+  @extend %icon;
+  background-image: url(image/album.svg);
+}
+
+.info-link-text{
+  margin-right: 10px;
+}
+
+
 
 #project-cards, #experience-cards {
   //padding: 30px 0;
@@ -181,5 +190,11 @@ header {
 
   &:hover {
     box-shadow: 0 5px 10px rgba(black, 0.2);
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .info-link-text {
+    display: none;
   }
 }

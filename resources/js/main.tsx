@@ -15,7 +15,7 @@ const experience = document.getElementById("experience-cards");
 const projects = document.getElementById("project-cards");
 let PENDING_RENDERS = 4;
 
-const ref = React.createRef<TypeWriter>();
+const typeWriterRef = React.createRef<TypeWriter>();
 
 function onRendered() {
     PENDING_RENDERS--;
@@ -34,6 +34,9 @@ function onRendered() {
         loading.classList.remove("active");
 
 
+        // start type-writer
+        typeWriterRef.current.run();
+
         // animate rendered refs
         for (let i = 0; i < skillRefs.length; i++) {
             setTimeout(() => skillRefs[i].current.classList.add("active"), i * 200);// Delays by 200ms
@@ -49,9 +52,9 @@ ReactDOM.render(SKILLS.map((skill, i) => {
     return <div className="skill" ref={ref}>{skill}</div>
 }), skills, onRendered);
 
-ReactDOM.render(<TypeWriter recording={recording} ref={ref}/>, summary, onRendered);
+ReactDOM.render(<TypeWriter recording={recording} ref={typeWriterRef}/>, summary, onRendered);
 summary.addEventListener("click", event => {
-    ref.current.run();
+    typeWriterRef.current.run();
 });
 
 ReactDOM.render(renderCards(workCards), experience, onRendered);

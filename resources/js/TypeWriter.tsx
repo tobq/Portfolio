@@ -13,10 +13,6 @@ export default class extends React.Component<Props, State> {
         index: 0
     };
 
-    componentDidMount(): void {
-        this.run();
-    }
-
     async run() {
         if (this.state.running) return;
         this.setState({running: true});

@@ -106,16 +106,14 @@ header {
 }
 
 
-
 #music-icon {
   @extend %icon;
   background-image: url(image/album.svg);
 }
 
-.info-link-text{
+.info-link-text {
   margin-right: 10px;
 }
-
 
 
 #project-cards, #experience-cards {
@@ -196,5 +194,16 @@ header {
 @media only screen and (max-width: 630px) {
   .info-link-text {
     display: none;
+  }
+
+
+  #project-cards, #experience-cards {
+    //padding: 30px 0;
+    //flex-wrap: wrap;
+    //box-sizing: border-box;
+    //height: 100%;
+    display: grid;
+    grid-gap: $side-spacing;
+    grid-template-columns: repeat(auto-fit, 100%);
   }
 }

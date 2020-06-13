@@ -27,7 +27,7 @@ export default [
     "Webpack",
     "Babel",
     "AJAX",
-    "Apache",
+    // "Apache HTTP Server",
     "Linux CLI",
     "..."
 ]

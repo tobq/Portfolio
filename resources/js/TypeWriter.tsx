@@ -5,7 +5,10 @@ interface State {
     index: number
 }
 
-type Props = { recording: { text: string, offset: number }[] };
+type Props = {
+    recording: { text: string, offset: number }[],
+    playbackSpeed: number
+};
 
 export default class extends React.Component<Props, State> {
     state = {
@@ -33,6 +36,6 @@ export default class extends React.Component<Props, State> {
     }
 
     private getOffset(i: number) {
-        return this.props.recording[i].offset;
+        return this.props.recording[i].offset / this.props.playbackSpeed;
     }
 }

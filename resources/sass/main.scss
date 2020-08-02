@@ -13,7 +13,7 @@ body {
   }
 }
 
-#logo, #projects-button {
+#logo, #projects-button, .card-title, .logo-card {
   color: black;
   text-decoration: none;
 }
@@ -29,6 +29,7 @@ header {
   background: linear-gradient(to bottom, white, transparent);
   padding: 0 $side-spacing 20px;
   pointer-events: none;
+  z-index: 9999;
 
   > * {
     pointer-events: all;
@@ -109,6 +110,11 @@ header {
 #music-icon {
   @extend %icon;
   background-image: url(image/album.svg);
+}
+
+#linkedin-icon {
+  @extend %icon;
+  background-image: url(image/linkedin.svg);
 }
 
 .info-link-text {

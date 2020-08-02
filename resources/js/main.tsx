@@ -8,6 +8,7 @@ import workCards, {CardProps} from "./workCards";
 import ImageCard from "./ImageCard";
 import VideoCard from "./VideoCard";
 import projectCards from "./projectCards";
+import LogoCard from "./LogoCard";
 
 const summary = document.getElementById("home-summary");
 const skills = document.getElementById("home-skills");
@@ -52,7 +53,7 @@ ReactDOM.render(SKILLS.map((skill, i) => {
     return <div className="skill" ref={ref}>{skill}</div>
 }), skills, onRendered);
 
-ReactDOM.render(<TypeWriter recording={recording} ref={typeWriterRef}/>, summary, onRendered);
+ReactDOM.render(<TypeWriter recording={recording} playbackSpeed={1.5} ref={typeWriterRef}/>, summary, onRendered);
 summary.addEventListener("click", event => {
     typeWriterRef.current.run();
 });
@@ -61,18 +62,20 @@ ReactDOM.render(renderCards(workCards), experience, onRendered);
 ReactDOM.render(renderCards(projectCards), projects, onRendered);
 
 
+function renderCard(props: CardProps) {
+    return "backgroundVideo" in props ? <VideoCard {...props}/> :
+        "description" in props ? <ImageCard {...props}/> :
+            <LogoCard {...props}/>;
+}
+
 function renderCards(cardProps: CardProps[]) {
-    return cardProps.map(cardProp =>
-        "backgroundImage" in cardProp ?
-            <ImageCard {...cardProp}/> :
-            <VideoCard {...cardProp}/>
-    );
+    return cardProps.map(renderCard);
 }
 
 // TODO: IMAGE URL ICON
-// TODO: PROJECTS LINK SCROLL DOWN
+// TODO: PROJECTS SMOOTH LINK SCROLL DOWN
 // TODO: ADD MORE PROJECTS
-// TODO: ADD COMPANY LOGOS 
+// TODO: ADD COMPANY LOGOS
 // TODO: fractal background
 // todo: Use preact
 // TODO: MOVE CARDDATA/SKILLS TO A DATA PACKAGE

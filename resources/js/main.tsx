@@ -18,6 +18,12 @@ let PENDING_RENDERS = 4;
 
 const typeWriterRef = React.createRef<TypeWriter>();
 
+let portfolio_hostname = "tobi.akinyemi.org";
+const portfolio_url = "https://" + portfolio_hostname;
+if (window.location.hostname !== portfolio_hostname && /(.+\\.)?akinyemi.org/.test(window.location.hostname)) {
+    window.location.href = portfolio_url
+}
+
 function onRendered() {
     PENDING_RENDERS--;
     if (PENDING_RENDERS === 0) {

@@ -19,10 +19,10 @@ let cards: CardProps[] = [
     },
     {
         url: null,
-        name: "Pool-cam",
+        name: "Softwire: Internship",
         date: "Aug 2016",
         description: <div>
-            Another masterful shot... Captured in High-Distortion by the Pool-Cam system I worked on.<br/>
+            Another masterful shot... Captured in High-Distortion by the Pool-Cam system I worked on, while on the internship.<br/>
             <span id="note">This was later rectified, using automatic image manipulation, based on the rectangular bounds of the pool table.</span>
         </div>,
         backgroundVideo: "video/pool.mp4",

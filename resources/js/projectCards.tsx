@@ -2,13 +2,13 @@ import * as React from "react";
 
 export default [
     {
-        url: "https://tobi.productions",
+        url: "https://www.beatstars.com/tobiq",
         name: "Tobi Productions",
         date: "Jan 2020",
         description: <div>
             As an avid fan of various genres of music, I started music production as a hobby.
             I've developed a music portfolio - using a content management system - at <a
-            href="https://tobi.productions">tobi.productions</a>
+            href="https://www.beatstars.com/tobiq">tobi.productions</a>
         </div>,
         backgroundImage: "image/tobi.productions.png",
     },

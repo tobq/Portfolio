@@ -1,0 +1,88 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { NODE_VERSION = "20" }
+
+[build.environment]
+  NODE_OPTIONS = "--max-old-space-size=4096"
+
+[[redirects]]
+  from = "https://akinyemi.uk/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.akinyemi.uk/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://akinyemi.org/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.akinyemi.org/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://tobi.akinyemi.org/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://akinyemi.co.uk/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.akinyemi.co.uk/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://tobi.akinyemi.co.uk/*"
+  to = "https://tobi.bio/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/font/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/image/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"

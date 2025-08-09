@@ -1,10 +1,24 @@
-import {ImageCardProps} from "./ImageCard";
-import * as React from "react";
-import {VideoCardProps} from "./VideoCard";
-import {LogoCardProps} from "./LogoCard";
+import {ImageCardProps} from "../components/ImageCard";
+import React from "react";
+import {VideoCardProps} from "../components/VideoCard";
+import {LogoCardProps} from "../components/LogoCard";
 
 export type CardProps = VideoCardProps | ImageCardProps | LogoCardProps;
 let cards: CardProps[] = [
+    {
+        url: "https://twoshot.ai",
+        name: "TwoShot",
+        date: "Jan 2023",
+        description: "Founder of TwoShot, reimagining music creation with AI-powered tools. Building the future of creative AI for musicians and producers, enabling them to create, sample, and transform music in revolutionary ways.",
+        backgroundImage: "image/twoshot.png",
+    },
+    {
+        url: "https://documatic.com",
+        name: "Documatic",
+        date: "Apr 2022",
+        description: "Lead Software Engineer & founding engineer, leading the development of AI-powered coding tools. Built core infrastructure for intelligent code generation and documentation systems.",
+        backgroundImage: "image/documatic.png",
+    },
     {
         url: "https://yapily.com",
         image: "/image/yapily.svg",

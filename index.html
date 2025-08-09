@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi Akinyemi - Portfolio</title>
+    <link rel="stylesheet" href="/css/fonts.css"/>
+    <link rel="stylesheet" href="/css/loading.css"/>
+</head>
+<body>
+<header>
+    <a id="logo" href="https://tobi.bio">TOBI</a>
+    <div id="info-links">
+        <a id="email-link" href="mailto:tobi@akinyemi.uk" target="_blank">
+            <span class="info-link-text">tobi@akinyemi.uk</span>
+            <div id="email-icon"></div>
+        </a>
+        <a id="music-link" href="https://www.beatstars.com/tobiq" target="_blank">
+            <span class="info-link-text">music</span>
+            <div id="music-icon"></div>
+        </a>
+        <a id="linkedin-link" href="https://www.linkedin.com/in/tobi-akinyemi/" target="_blank">
+            <span class="info-link-text">linkedin</span>
+            <div id="linkedin-icon"></div>
+        </a>
+        <a href="https://github.com/tobq" target="_blank">
+            <span class="info-link-text">GitHub</span>
+            <div id="github-link"></div>
+        </a>
+    </div>
+</header>
+<section id="home">
+    <a id="projects-button" href="#experience" onclick="event.preventDefault(); document.getElementById('experience').scrollIntoView({ behavior: 'smooth', block: 'start' }); return false;">
+        Experience
+        <div id="projects-icon"></div>
+    </a>
+    <div id="home-summary"></div>
+    <div class="title">
+        <div class="title-text">Skills</div>
+    </div>
+    <div id="home-skills"></div>
+</section>
+<section id="experience">
+    <div class="title">
+        <div class="title-text">Work Experience</div>
+    </div>
+    <div id="experience-cards"></div>
+</section>
+<section id="projects">
+    <div class="title">
+        <div class="title-text">Projects</div>
+        <a href="https://github.com/tobq/repositories" id="view-all-projects">View All</a></div>
+    <div id="project-cards"></div>
+</section>
+
+<div id="loading-overlay" class="active">
+    <div class="tobi-spinner">
+        T<span>O</span>BI
+    </div>
+</div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

@@ -1,6 +1,11 @@
 $header-height: 80px;
 $side-spacing: 30px;
 
+// Add smooth scrolling to the entire page
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0 $side-spacing $side-spacing;
@@ -82,7 +87,7 @@ header {
 
 #github-link {
   @extend %icon;
-  background-image: url(image/github.svg);
+  background-image: url(/image/github.svg);
 }
 
 #projects-button {
@@ -93,28 +98,34 @@ header {
   outline: none;
   border: none;
   font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(2px);
+  }
 }
 
 #projects-icon {
   @extend %icon;
   margin-left: 10px;
-  background-image: url(image/down.svg);
+  background-image: url(/image/down.svg);
 }
 
 #email-icon {
   @extend %icon;
-  background-image: url(image/email.svg);
+  background-image: url(/image/email.svg);
 }
 
 
 #music-icon {
   @extend %icon;
-  background-image: url(image/album.svg);
+  background-image: url(/image/album.svg);
 }
 
 #linkedin-icon {
   @extend %icon;
-  background-image: url(image/linkedin.svg);
+  background-image: url(/image/linkedin.svg);
 }
 
 .info-link-text {
@@ -182,7 +193,7 @@ header {
   margin: 0 $skill-spacing $skill-spacing 0;
   display: inline-flex;
   align-items: center;
-  border-radius: $skill-height/2;
+  border-radius: calc($skill-height / 2);
   background: white;
   height: $skill-height;
   box-shadow: 0 1px 6px rgba(black, 0.1);

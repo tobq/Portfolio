@@ -34,6 +34,16 @@
   background-position: top;
 }
 
+// A logo rather than a screenshot: shown whole and centred, at most half the card's
+// width like the .logo-card logos, instead of cropped to cover the area.
+.card-image-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  padding: 40px 25%;
+}
+
 .card-link {
   flex-grow: 1;
   flex-direction: column;

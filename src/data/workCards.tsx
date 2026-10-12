@@ -2,6 +2,7 @@ import {ImageCardProps} from "../components/ImageCard";
 import React from "react";
 import {VideoCardProps} from "../components/VideoCard";
 import {LogoCardProps} from "../components/LogoCard";
+import twoshotMark from "../assets/twoshot-mark-black.svg";
 
 export type CardProps = VideoCardProps | ImageCardProps | LogoCardProps;
 let cards: CardProps[] = [
@@ -10,7 +11,8 @@ let cards: CardProps[] = [
         name: "TwoShot",
         date: "Jan 2023",
         description: "Founder of TwoShot, reimagining music creation with AI-powered tools. Building the future of creative AI for musicians and producers, enabling them to create, sample, and transform music in revolutionary ways.",
-        backgroundImage: "image/twoshot.png",
+        backgroundImage: twoshotMark,
+        contain: true,
     },
     {
         url: "https://documatic.com",
